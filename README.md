@@ -61,22 +61,22 @@ Note: Both services are served over https by using a self-signed certificate.
 ## Screenshots
 
 ### Insight Panel:
-![alt text](https://bitbucket.org/secopstech/zabbix-server/raw/dd654d8e7bae8296009632763f4b001de8aa3091/screenshots/linux-insight.png "Insight")
+![alt text](https://bitbucket.org/secopstech/zabbix-server/raw/cd3b78150db35a6de1fbd4c1fdcc000c65d15373/screenshots/linux-insight.png "Insight")
 
 ### CPU and Memory Graphs
-![alt text](https://bitbucket.org/secopstech/zabbix-server/raw/dd654d8e7bae8296009632763f4b001de8aa3091/screenshots/linux-cpu-mem.png "CPU and Memory Graphs")
+![alt text](https://bitbucket.org/secopstech/zabbix-server/raw/cd3b78150db35a6de1fbd4c1fdcc000c65d15373/screenshots/linux-cpu-mem.png "CPU and Memory Graphs")
 
 ### Filesystem and Network Interfaces Graphs
-![alt text](https://bitbucket.org/secopstech/zabbix-server/raw/dd654d8e7bae8296009632763f4b001de8aa3091/screenshots/linux-fs-netif.png "Filesystem and Network Interfaces Graph")
+![alt text](https://bitbucket.org/secopstech/zabbix-server/raw/cd3b78150db35a6de1fbd4c1fdcc000c65d15373/screenshots/linux-fs-netif.png "Filesystem and Network Interfaces Graph")
 
 ### Overall system status dashboard
-![alt text](https://bitbucket.org/secopstech/zabbix-server/raw/889132624cad88de5e242d60cd8502ae2c04b378/screenshots/overall-system-status.png "Overall system status")
+![alt text](https://bitbucket.org/secopstech/zabbix-server/raw/cd3b78150db35a6de1fbd4c1fdcc000c65d15373/screenshots/overall-system-status.png "Overall system status")
 
 ### Example slack alert for a problem notification
-![alt text](https://bitbucket.org/secopstech/zabbix-server/raw/889132624cad88de5e242d60cd8502ae2c04b378/screenshots/slack-notification1.png "Slack notification - problem")
+![alt text](https://bitbucket.org/secopstech/zabbix-server/raw/cd3b78150db35a6de1fbd4c1fdcc000c65d15373/screenshots/slack-notification1.png "Slack notification - problem")
 
 ### Example slack alert for a resolve notification
-![alt text](https://bitbucket.org/secopstech/zabbix-server/raw/889132624cad88de5e242d60cd8502ae2c04b378/screenshots/slack-notification2.png "Slack notification - resolved")
+![alt text](https://bitbucket.org/secopstech/zabbix-server/raw/cd3b78150db35a6de1fbd4c1fdcc000c65d15373/screenshots/slack-notification2.png "Slack notification - resolved")
 
 ## Example output
 

@@ -857,7 +857,7 @@ EOF
 }
 
 # Enable notification trigger action for administrators
-function EmailNotifTriggerPD() {
+function NotifTriggerPD() {
 cat <<EOF
 {
     "jsonrpc": "2.0",

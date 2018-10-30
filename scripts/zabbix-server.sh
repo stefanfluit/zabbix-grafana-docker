@@ -957,7 +957,7 @@ case "$1" in
             POST=$(curl -s --insecure \
             -H "Accept: application/json" \
             -H "Content-Type:application/json" \
-            -X POST --data "$(EmailNotifTriggerPD)" "$ZBX_SERVER_URL/api_jsonrpc.php"  |jq .)
+            -X POST --data "$(NotifTriggerPD)" "$ZBX_SERVER_URL/api_jsonrpc.php"  |jq .)
 
             if [[ "$POST" == *"error"* ]]; then
                 echo -n "Enable notifications for admin group:"
@@ -984,7 +984,6 @@ case "$1" in
                 docker-compose exec zabbix-server apk --no-cache add curl curl-dev > /dev/null 2>&1
                 echo -n "Slack dependency installation:"
                 echo -ne "\t\t\t" && Done
-                sleep 1
             else
                 echo -n "Zabbix is not running. Quit!"
                 EchoDash
@@ -1046,7 +1045,23 @@ case "$1" in
                 echo -n "Slack notification configuration:" && \
                 echo -ne "\t\t" && Skip
         fi
+            POST=$(curl -s --insecure \
+            -H "Accept: application/json" \
+            -H "Content-Type:application/json" \
+            -X POST --data "$(NotifTriggerPD)" "$ZBX_SERVER_URL/api_jsonrpc.php"  |jq .)
 
+            if [[ "$POST" == *"error"* ]]; then
+                echo -n "Enable notifications for admin group:"
+                echo -ne "\t" && Failed
+                echo -n "An error occured. Please check the error output"
+                echo "$POST" |jq .
+                sleep 1
+                else
+                echo -n "Enable notifications for admin group:"
+                echo -ne "\t\t" && Done
+                sleep 1
+                EchoDash
+            fi
         echo ""
         sleep 1
         echo -e '\E[1m'"\033\Zabbix deployment finished!\033[0m"

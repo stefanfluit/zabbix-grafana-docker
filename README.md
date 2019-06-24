@@ -1,3 +1,9 @@
+Notice: This is a fork from https://bitbucket.org/secopstech/zabbix-server/src/master/
+There where some misstakes in some functions, i fixed that and made this repo. 
+Zabbix version 4.0
+Scripts will be updated soon. 
+
+
 # Dockerized Zabbix Server 4.0 Installation Script
 
 

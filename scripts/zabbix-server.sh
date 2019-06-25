@@ -30,6 +30,7 @@ case "$1" in
         echo -e ""
         echo -e '\E[96m'"\033\- Install epel repo and jq packages.\033[0m"
         sleep 1
+        yum -y install openssl
         #check if epel repo installed
         EPEL=$(rpm -qa |egrep epel-release || echo "epel-release is not installed")
         if [[ $EPEL == "epel-release is not installed" ]]; then
